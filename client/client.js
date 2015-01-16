@@ -27,13 +27,11 @@ var mainData = [
 	}
 ];
 
+Router.route('/service/:_service', function () {
+  this.render('service_editor', {service_name: this.params._service});
+});
+
 Meteor.startup(function () {
 	$(function() {
-		$(	'#theTree').jstree({
-			"plugins" : [ "checkbox", "contextmenu", "dnd", "search", "state", "types", "unique"],
-			'core' : {
-		    'data' : mainData
-		  }
-		});
 	});
 });

@@ -17,6 +17,28 @@
 	<footer>HEADER</footer>
 </template>
 
+<template name="service_editor">
+	<h2>{{service_name}}</h2>
+
+	<label for="model_editor">Model</label>
+	<textarea id="model_editor" cols="30" rows="10"></textarea>
+
+	<label for="routes_editor">Route</label>
+	<textarea id="routes_editor" cols="30" rows="10"></textarea>
+
+	<label for="methods_editor">Methods</label>
+	<textarea id="methods_editor" cols="30" rows="10"></textarea>
+
+	<label for="templates_editor">Templates</label>
+	<textarea id="templates_editor" cols="30" rows="10"></textarea>
+
+	<label for="helpers_editor">Helpers</label>
+	<textarea id="helpers_editor" cols="30" rows="10"></textarea>
+
+	<label for="events_editor">Events</label>
+	<textarea id="events_editor" cols="30" rows="10"></textarea>
+</template>
+
 <template name="main">
 	<div id="theTree"></div>
 </template>
